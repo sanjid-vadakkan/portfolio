@@ -56,11 +56,19 @@ export default function Contact() {
         </motion.h2>
         <div className="flex flex-col md:flex-row gap-10">
           <form
-          
+            action="https://formsubmit.co/sanjidvadakkan@gmail.com"
+            method="POST"
             className="flex-1 bg-white dark:bg-gray-900 rounded shadow p-6"
-            onSubmit={handleSubmit}
             autoComplete="off"
           >
+
+<input type="hidden" name="_captcha" value="false" />
+<input type="hidden" name="_template" value="box" />
+<input type="hidden" name="_autoresponse" value="Thanks for contacting me. I will reply soon." />
+
+
+
+
             <div className="mb-4">
               <label className="block font-semibold mb-1" htmlFor="name">
                 Name
