@@ -6,7 +6,7 @@ const projects = [
     description:
       "Full-stack React + Express web app with secure JWT auth, admin panel, and email confirmation.",
     tech: ["React", "Express.js", "Node.js", "MongoDB", "JWT", "Nodemailer"],
-    video: "https://drive.google.com/file/d/1hF8cBjyDJ7Dn876xw-f51NvSqHSzDEHk/preview", // Place your video in 'public/videos'
+    video: "https://drive.google.com/file/d/1hF8cBjyDJ7Dn876xw-f51NvSqHSzDEHk/preview" , // Place your video in 'public/videos'
     github: "https://github.com/sanjid-vadakkan/concert-ticket-booking",
     image: "image/concert.png"
   },
@@ -24,7 +24,7 @@ const projects = [
     description:
       "A full-stack Task Manager with login using JWT. Users can add, edit, delete, and filter tasks by status (Pending, In Progress, Completed).",
     tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT",],
-    video: "https://drive.google.com/file/d/14iUXcKrEyG6yh3EPPoeEI1ZyIxmDkABb/preview", // Place your video in 'public/videos'
+    video: "https://drive.google.com/file/d/14iUXcKrEyG6yh3EPPoeEI1ZyIxmDkABb/preview" , // Place your video in 'public/videos'
     github: "https://github.com/sanjid-vadakkan/task-management-",
     image: "image/task-manager.png"
   }
