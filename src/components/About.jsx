@@ -22,7 +22,7 @@ export default function About() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-2xl font-bold mb-2 text-indigo-600 dark:text-indigo-400">
-            About Me
+            About Me 
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-200">
             Motivated MERN developer skilled in secure full-stack apps using MongoDB, Express.js, React.js, and Node.js. Fast learner, problem solver, and passionate about user-focused interfaces.

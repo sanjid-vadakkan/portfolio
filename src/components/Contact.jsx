@@ -56,6 +56,7 @@ export default function Contact() {
         </motion.h2>
         <div className="flex flex-col md:flex-row gap-10">
           <form
+            action="https://formsubmit.co/sanjidvadakkan@gmail.com"
             className="flex-1 bg-white dark:bg-gray-900 rounded shadow p-6"
             onSubmit={handleSubmit}
             autoComplete="off"
