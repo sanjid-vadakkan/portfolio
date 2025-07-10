@@ -57,66 +57,39 @@ export default function Contact() {
         <div className="flex flex-col md:flex-row gap-10">
           <form
             action="https://formsubmit.co/sanjidvadakkan@gmail.com"
-            className="flex-1 bg-white dark:bg-gray-900 rounded shadow p-6"
-            onSubmit={handleSubmit}
-            autoComplete="off"
+            method="POST"
+            className="space-y-4"
           >
-            <div className="mb-4">
-              <label className="block font-semibold mb-1" htmlFor="name">
-                Name
-              </label>
-              <input
-                className="w-full p-2 rounded border border-gray-300 dark:border-gray-700 bg-transparent"
-                id="name"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                autoComplete="off"
-              />
-              {errors.name && (
-                <p className="text-red-600 text-sm mt-1">{errors.name}</p>
-              )}
-            </div>
-            <div className="mb-4">
-              <label className="block font-semibold mb-1" htmlFor="email">
-                Email
-              </label>
-              <input
-                className="w-full p-2 rounded border border-gray-300 dark:border-gray-700 bg-transparent"
-                id="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                autoComplete="off"
-              />
-              {errors.email && (
-                <p className="text-red-600 text-sm mt-1">{errors.email}</p>
-              )}
-            </div>
-            <div className="mb-4">
-              <label className="block font-semibold mb-1" htmlFor="message">
-                Message
-              </label>
-              <textarea
-                className="w-full p-2 rounded border border-gray-300 dark:border-gray-700 bg-transparent"
-                id="message"
-                name="message"
-                rows={4}
-                value={form.message}
-                onChange={handleChange}
-              />
-              {errors.message && (
-                <p className="text-red-600 text-sm mt-1">{errors.message}</p>
-              )}
-            </div>
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Your Name"
+              className="border p-2 w-full rounded"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Your Email"
+              className="border p-2 w-full rounded"
+            />
+            <textarea
+              name="message"
+              required
+              placeholder="Your Message"
+              className="border p-2 w-full rounded"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://sanjid-vadakkan.github.io/portfolio/thanks" />
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition font-medium"
-              disabled={sent}
+              className="bg-indigo-600 text-white py-2 px-4 rounded"
             >
-              {sent ? "Message Sent!" : "Send Message"}
+              Send Message
             </button>
           </form>
+
           <div className="flex-1 space-y-4">
             <div>
               <h3 className="font-semibold">Phone</h3>
