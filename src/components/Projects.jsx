@@ -5,31 +5,31 @@ const projects = [
     title: "Concert Ticket Booking App",
     description:
       "Full-stack React + Express web app with secure JWT auth, admin panel, and email confirmation.",
-    tech: ["React", "Express.js","Node.js", "MongoDB", "JWT", "Nodemailer"],
-    video: "/videos/concert-booking.mp4", // Place your video in 'public/videos'
-    github: "https://github.com/sanjid-vadakkan",
-    image:"image/concert.png"
+    tech: ["React", "Express.js", "Node.js", "MongoDB", "JWT", "Nodemailer"],
+    video: "https://drive.google.com/file/d/1hF8cBjyDJ7Dn876xw-f51NvSqHSzDEHk/preview", // Place your video in 'public/videos'
+    github: "https://github.com/sanjid-vadakkan/concert-ticket-booking",
+    image: "image/concert.png"
   },
   {
     title: "E-Commerce Backend",
     description:
       "Backend with session-based auth and AJAX cart, modular routing.",
     tech: ["Node.js", "Express.js", "MongoDB", "AJAX", "Session"],
-    video: "/videos/e-commerce.mp4", // Place your video in 'public/videos'
-    github: "https://github.com/sanjid-vadakkan",
-    image:"image/e-commerce.png"
+    video: "https://drive.google.com/uc?export=download&id=1ahBhQRKHx5HX3nCO4cD5C812vL-IPFjP",
+    github: "https://github.com/sanjid-vadakkan/-e-commerce",
+    image: "image/e-commerce.png"
   },
   {
     title: "task Manager App",
     description:
       "A full-stack Task Manager with login using JWT. Users can add, edit, delete, and filter tasks by status (Pending, In Progress, Completed).",
-    tech: ["React","Node.js", "Express.js", "MongoDB", "JWT",],
-    video: "/videos/task-manager.mp4", // Place your video in 'public/videos'
-    github: "https://github.com/sanjid-vadakkan",
-    image:"image/task-manager.png"
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT",],
+    video: "https://drive.google.com/file/d/14iUXcKrEyG6yh3EPPoeEI1ZyIxmDkABb/preview", // Place your video in 'public/videos'
+    github: "https://github.com/sanjid-vadakkan/task-management-",
+    image: "image/task-manager.png"
   }
 ];
- 
+
 export default function Projects() {
   return (
     <section id="projects" className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors">
@@ -66,14 +66,15 @@ export default function Projects() {
                 ))}
               </div>
               <div className="mb-3 rounded overflow-hidden aspect-video bg-gray-200 dark:bg-gray-700">
-                <video
-                  src={proj.video}
-                  controls
-                  
+                <iframe
+                  title={proj.title}
+                  src={proj.video.includes("/preview")
+                    ? proj.video
+                    : proj.video.replace("uc?export=download&id=", "file/d/") + "/preview"
+                  }
                   className="w-full h-full object-cover"
-                  preload="none"
-                  poster={proj.image}
-                />
+                  allow="autoplay"
+                ></iframe>
               </div>
               <a
                 href={proj.github}
