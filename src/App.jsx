@@ -20,7 +20,7 @@ export default function App() {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
 
   return (
-    <div className="relative min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+    <div className="relative w-full min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
       {/* Theme toggle button */}
       <button
         aria-label="Toggle Dark Mode"

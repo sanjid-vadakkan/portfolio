@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors"
+      className="py-16  bg-gray-50 dark:bg-gray-800 transition-colors"
     >
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10 max-w-5xl">
         <motion.img

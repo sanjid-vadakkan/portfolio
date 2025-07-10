@@ -10,6 +10,10 @@ const links = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/sanjid-vadakkan-613055323",
   },
+   {
+    label: "Instagram",
+    href: "https://www.instagram.com/sanjid_vadakkan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  },
 ];
 
 export default function Contact() {
@@ -44,8 +48,9 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors">
-      <div className="container mx-auto px-6 max-w-3xl">
+    <section id="contact" className="py-16 bg-gray-50 w-full dark:bg-gray-800 transition-colors">
+      <div className="container mx-auto px-3 sm:px-6 max-w-full sm:max-w-3xl">
+        
         <motion.h2
           className="text-2xl font-bold mb-8 text-indigo-600 dark:text-indigo-400"
           initial={{ opacity: 0, y: 30 }}
@@ -54,11 +59,11 @@ export default function Contact() {
         >
           Contact
         </motion.h2>
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex  flex-col md:flex-row gap-10">
           <form
             action="https://formspree.io/f/xeokyegn"
             method="POST"
-            className="flex-1 bg-white dark:bg-gray-900 rounded shadow p-6"
+            className="flex-1 w-full bg-white dark:bg-gray-900 rounded shadow p-6"
             autoComplete="off"
           >
 
@@ -123,7 +128,7 @@ export default function Contact() {
               {sent ? "Message Sent!" : "Send Message"}
             </button>
           </form>
-          <div className="flex-1 space-y-4">
+          <div className="flex-1 w-full space-y-4 mt-8 md:mt-0">
             <div>
               <h3 className="font-semibold">Phone</h3>
               <p className="text-gray-700 dark:text-gray-200">
